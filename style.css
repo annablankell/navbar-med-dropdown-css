@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+  
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+}
+
+
+/* HEADER STYLING INKL NAVBAR */
+header{
+    background-color: darkslategrey;
+}
+
+
+.myMenu{
+    display: block;
+    margin: 0;
+    padding-left: 0;
+    text-align: center;
+}
+
+
+.myMenu li{
+    display: block;
+    position: relative;
+    
+}
+
+.myDropdown{
+    display: none;
+    width: 100%;
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    /* border-top: 1px solid #ffffff; */
+    padding: 5px 15px 5px 15px;
+    background-color: darkslategray; 
+    margin-left: 1px;
+    white-space: nowrap;
+    font-size: 1em;
+    /* min-width: 215px;   */
+}
+
+ul li a:hover {
+    background: #617F8A;
+}
+
+li:hover ul {
+    display: block;
+    position: absolute;
+    z-index: 30;
+}
+
+li:hover li{
+    float: none;
+    font-size: 11px;
+}
+
+li:hover a {
+    background: #617F8A;
+}
+
+li:hover li a:hover {
+    background: #95A9B1;
+}
+
+.myDropdown a {
+    /* width: 100%; */
+      border-top: 0.5px solid #ffffff;
+}
+
+
+
+/* Media Queries */
+
+ @media all and (min-width: 600px) {
+    .myMenu li {
+        display: inline-block;
+        border-bottom: 0;
+ }
+
+.myDropdown li{
+    display: block;
+}
+
+
+    /* .myDropdown a {
+        width: 215px;
+    } */
+    
+
+}
+
+
